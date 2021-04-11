@@ -1,0 +1,105 @@
+html.open {
+  overflow: hidden;
+}
+.menu_btn {
+width: 30px;
+height: 28px;
+background: url('../images/menu_btn_pink.png') no-repeat center center;
+background-size: 100% auto;
+position:absolute;
+right:20px;
+z-index: 20;
+cursor: pointer;
+display:none;
+}
+.menu_close {
+  position: absolute;
+  left: 20px;
+  top: 17px;
+  width: 22px;
+  height: 22px;
+  background: url('../images/menu_close_black.png') no-repeat center center;
+  background-size: 100% auto;
+  cursor: pointer;
+  opacity:0.6;
+}
+#menu {
+  width:200px;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: -256px;
+  z-index:200;
+  text-align: center;
+  transition: All 0.2s ease;
+  -webkit-transition: All 0.2s ease;
+  -moz-transition: All 0.2s ease;
+  -o-transition: All 0.2s ease;
+  background: #fff;
+  overflow-y: auto;
+}
+#menu.open {
+  right: 0px;
+}
+.page_cover.open {
+  display: block;
+}
+.page_cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index:150;
+  display: none;
+}
+
+.menu_wrap{
+ width:100%;
+ height:100%;
+ padding:0px;
+ position: relative;
+ overflow:hidden;
+ overflow-y: auto;
+}
+.menu_top{
+width:100%;
+position:relative;
+text-align:center;
+}
+.menu_logo{
+ padding:70px 0px 35px;
+ width:100%;
+ border-bottom:1px solid #ededed;
+}
+.menu_logo img{
+width:80px;
+height:auto;
+}
+.menu_bottom{
+ width:100%;
+ padding:25px;
+}
+.Icon_mob{
+ width:100%;
+}
+.Icon_mob .link{
+ padding:15px 0px;
+}
+.Icon_mob .link a{
+ display:block;
+ font-size:16px;
+ font-weight: 400;
+ padding:3px 0px;
+}
+
+
+
+
+@media screen and (max-width:767px){
+	.menu_btn{
+		display:block;
+	}
+}
+
